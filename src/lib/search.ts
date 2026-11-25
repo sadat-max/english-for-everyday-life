@@ -14,6 +14,7 @@ const PAGES: Hit[] = [
   { kind: 'Lesson', title: 'Time Expressions', sub: 'every day, yesterday, since, for, already, yet', ar: 'تعبيرات الزمن', page: 'time' },
   { kind: 'Lesson', title: 'Perfect Tenses', sub: 'have/has/had/will have + V3', ar: 'الأزمنة التامة', page: 'perfect' },
   { kind: 'Lesson', title: 'Tense Comparison', sub: 'Compare tenses side by side', ar: 'مقارنة الأزمنة', page: 'compare' },
+  { kind: 'Lesson', title: 'Sentence Structure', sub: 'Labelled diagram: subject, helping verb, main verb, object, time', ar: 'تركيب الجملة', page: 'structure' },
   { kind: 'Lesson', title: 'Sentence Builder', sub: 'Build correct sentences', ar: 'بناء الجمل', page: 'builder' },
   { kind: 'Lesson', title: 'Everyday Conversations', sub: 'Business and daily dialogues', ar: 'المحادثات', page: 'conversations' },
   { kind: 'Lesson', title: 'Quick Reference', sub: 'Printable grammar summary', ar: 'المرجع السريع', page: 'reference' },

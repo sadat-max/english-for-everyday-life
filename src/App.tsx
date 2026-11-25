@@ -9,12 +9,14 @@ import { VerbsPage } from './pages/Verbs';
 import { BuilderPage, ConversationsPage } from './pages/Tools';
 import { QuizzesPage, QuizPage, MistakesPage, ProgressPage } from './pages/Practice';
 import { ReferencePage } from './pages/Reference';
+import { StructurePage } from './pages/Structure';
 import { TENSE_MAP } from './data/tenses';
 
 function Router() {
   const { page } = useNav();
   if (TENSE_MAP[page]) return <TenseLesson key={page} id={page} />;
   switch (page) {
+    case 'structure': return <StructurePage />;
     case 'roadmap': return <Roadmap />;
     case 'subjects': return <SubjectsPage />;
     case 'helping': return <HelpingPage />;

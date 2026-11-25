@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Home, Map, Users, Wrench, Sun, CalendarDays, Clock3, ArrowLeftRight, Layers, Scale, BookOpen, CaseSensitive, CalendarClock, Wand2, MessageSquareText, Target, TriangleAlert, BarChart3, Bookmark, ChevronDown, ChevronUp, PanelLeftClose, PanelLeftOpen, Search, Menu, X, Sparkles, ArrowLeft, Globe, EyeOff, Eye, Bell, BookOpenText, LucideIcon } from 'lucide-react';
+import { Home, Network, Map, Users, Wrench, Sun, CalendarDays, Clock3, ArrowLeftRight, Layers, Scale, BookOpen, CaseSensitive, CalendarClock, Wand2, MessageSquareText, Target, TriangleAlert, BarChart3, Bookmark, ChevronDown, ChevronUp, PanelLeftClose, PanelLeftOpen, Search, Menu, X, Sparkles, ArrowLeft, Globe, EyeOff, Eye, Bell, BookOpenText, LucideIcon } from 'lucide-react';
 import { useNav } from '../lib/nav';
 import { useStore, LangMode, today } from '../store/store';
 import { search, Hit, LocalAssistant } from '../lib/search';
@@ -15,6 +15,7 @@ const BLUE = '#0659D6';
 const tenseMatch = (fam: string) => (p: string) => p === fam || (p.startsWith(fam + '-') && !p.includes('perfect'));
 export const NAV: NavItem[] = [
   { id: 'dashboard', en: 'Dashboard', ar: 'الرئيسية', icon: Home, color: BLUE },
+  { id: 'structure', en: 'Sentence Structure', ar: 'تركيب الجملة', icon: Network, color: '#9333EA' },
   { id: 'roadmap', en: 'Learning Roadmap', ar: 'خريطة التعلم', icon: Map, color: BLUE },
   { id: 'subjects', en: 'Subjects & Pronouns', ar: 'الفاعل والضمائر', icon: Users, color: BLUE },
   { id: 'helping', en: 'Helping Verbs', ar: 'الأفعال المساعدة', icon: Wrench, color: BLUE },
