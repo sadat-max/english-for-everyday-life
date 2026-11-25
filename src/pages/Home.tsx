@@ -31,16 +31,16 @@ function Banner() {
   return (
     <div className="banner relative overflow-hidden rounded-[20px] px-6 py-3 text-white sm:px-7">
       <div className="pointer-events-none absolute inset-0 opacity-40" style={{ background: 'radial-gradient(500px 160px at 75% 0%, rgba(0,217,255,.45), transparent 70%), radial-gradient(300px 140px at 10% 120%, rgba(147,51,234,.4), transparent 70%)' }} />
-      <div className="relative grid items-center gap-x-6 gap-y-2 md:grid-cols-[auto_1fr] 2xl:grid-cols-[auto_1fr_230px]">
-        <div>
-          <h1 className="whitespace-nowrap text-[27px] font-extrabold leading-tight tracking-tight sm:text-[30px]">Welcome, Mr. Nabegh!</h1>
+      <div className="relative flex flex-col gap-x-6 gap-y-2 md:flex-row md:items-center">
+        <div className="min-w-0 md:flex-1">
+          <h1 className="text-[27px] font-extrabold leading-tight tracking-tight sm:text-[30px]">Welcome, Mr. Nabegh!</h1>
           <p className="mt-1 text-[16px] font-medium text-[#DCEBFF]">Let's improve your English, one sentence at a time.</p>
         </div>
-        <div dir="rtl" className="font-ar md:pe-2">
-          <p className="whitespace-nowrap text-[22px] font-bold leading-tight 2xl:text-[25px]">مرحباً أستاذ نابغ!</p>
-          <p className="mt-1 whitespace-nowrap text-[15px] font-semibold text-[#DCEBFF] 2xl:text-[16px]">لنتعلم اللغة الإنجليزية خطوة بخطوة</p>
+        <div dir="rtl" className="min-w-0 font-ar md:flex-1">
+          <p className="text-[22px] font-bold leading-tight 2xl:text-[25px]">مرحباً أستاذ نابغ!</p>
+          <p className="mt-1 text-[15px] font-semibold text-[#DCEBFF] 2xl:text-[16px]">لنتعلم اللغة الإنجليزية خطوة بخطوة</p>
         </div>
-        <BannerArt className="hidden h-[92px] w-[230px] 2xl:block" />
+        <BannerArt className="hidden h-[92px] w-[230px] shrink-0 2xl:block" />
       </div>
     </div>
   );
